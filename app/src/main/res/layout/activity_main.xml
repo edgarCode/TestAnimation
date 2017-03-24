@@ -13,6 +13,8 @@
         android:src="@drawable/img_qiantong"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/dp_12"
+        android:paddingLeft="@dimen/dp_80"
+        android:paddingTop="@dimen/dp_20"
         />
 
 
