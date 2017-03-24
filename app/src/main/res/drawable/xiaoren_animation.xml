@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+	根标签为animation-list，其中oneshot代表着是否只展示一遍，设置为false会不停的循环播放动画
+	根标签下，通过item标签对动画中的每一个图片进行声明
+	android:duration 表示展示所用的该图片的时间长度
+ -->
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:oneshot="true"
+  >
+  	<item android:drawable="@drawable/xiaoren01" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren02" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren03" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren04" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren05" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren06" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren07" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren08" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren09" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren10" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren11" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren12" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren13" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren14" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren15" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren16" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren17" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren18" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren19" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren20" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren21" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren22" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren23" android:duration="60"></item>
+  	<item android:drawable="@drawable/xiaoren24" android:duration="60"></item>
+		<item android:drawable="@drawable/xiaoren25" android:duration="60"></item>
+		<item android:drawable="@drawable/xiaoren26" android:duration="60"></item>
+</animation-list>
