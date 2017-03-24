@@ -7,7 +7,7 @@
     >
 
     <ImageView
-        android:id="@+id/img"
+        android:id="@+id/img_mascot"
         android:layout_width="@dimen/dp_450"
         android:layout_height="@dimen/dp_428"
         android:src="@drawable/xiaoren01"
@@ -15,26 +15,35 @@
         android:layout_marginTop="@dimen/dp_12"
         />
     <RelativeLayout
-        android:id="@+id/layout_qiangpin"
+        android:id="@+id/layout_dialog_result"
         android:layout_width="@dimen/dp_700"
         android:layout_height="@dimen/dp_454"
         android:layout_centerInParent="true"
         android:visibility="gone"
         >
         <ImageView
-            android:id="@+id/img_bg"
+            android:id="@+id/img_dialog_bg"
             android:layout_width="@dimen/dp_700"
             android:layout_height="@dimen/dp_454"
             android:layout_marginLeft="-700dp"
-            android:src="@drawable/dialog_bg"
+            android:src="@drawable/bg_dialog"
             android:scaleType="fitXY"
             />
     </RelativeLayout>
     <ImageView
-        android:id="@+id/img_qian"
+        android:id="@+id/img_stick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/qian2"
+        android:src="@drawable/stick_back"
+        android:layout_marginLeft="@dimen/dp_600"
+        android:layout_marginTop="@dimen/dp_m_100"
+        android:visibility="invisible"
+        />
+    <ImageView
+        android:id="@+id/img_stick_backup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stick_back"
         android:layout_marginLeft="@dimen/dp_600"
         android:layout_marginTop="@dimen/dp_m_100"
         android:visibility="invisible"
