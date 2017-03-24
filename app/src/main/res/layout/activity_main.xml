@@ -8,11 +8,12 @@
 
     <ImageView
         android:id="@+id/img"
-        android:layout_width="@dimen/dp_420"
-        android:layout_height="@dimen/dp_480"
+        android:layout_width="@dimen/dp_450"
+        android:layout_height="@dimen/dp_428"
         android:src="@drawable/img_qiantong"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_12"
         />
+
 
 </RelativeLayout>
