@@ -5,6 +5,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.DisplayMetrics;
 import android.view.KeyEvent;
@@ -44,16 +45,6 @@ public class MainActivity extends Activity {
         layout_dialog_result = (RelativeLayout) findViewById(R.id.layout_dialog_result);
         image_bg_dialog = (ImageView) findViewById(R.id.img_dialog_bg);
 
-        try {
-            File file = getFileStreamPath("anim_puzzle");
-            if (file.exists() && file.isDirectory() && file.listFiles()!=null && file.listFiles().length>0) {
-                return;
-            }
-            Utils.UnZipFolder(getFileStreamPath("anim_puzzle.zip").getAbsolutePath(), getFilesDir().getAbsolutePath());
-            getFileStreamPath("anim_puzzle.zip").delete();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
     }
 
     private void rotation() {
@@ -129,7 +120,7 @@ public class MainActivity extends Activity {
     @Override
     public boolean onKeyDown(int keyCode, KeyEvent event) {
         if (keyCode == KeyEvent.KEYCODE_DPAD_CENTER) {
-            MyAnimationDrawable2.animateRawManuallyFromXML(new File(getFilesDir().getAbsolutePath()+"/anim_puzzle/xiaoren_animation.xml"), image_mascot, null, null);
+            startActivity(new Intent(this, FileAnimationActivity.class));
         } else if (keyCode == KeyEvent.KEYCODE_DPAD_DOWN) {
             rotation();
         } else if (keyCode == KeyEvent.KEYCODE_DPAD_UP) {
